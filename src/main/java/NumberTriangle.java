@@ -90,7 +90,6 @@ public class NumberTriangle {
      *
      */
     public int retrieve(String path) {
-        // TODO implement this method
         if (path == null) {return root;}
 
         NumberTriangle curr = this;
@@ -123,7 +122,6 @@ public class NumberTriangle {
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
 
 
-        // TODO define any variables that you want to use to store things
         List<NumberTriangle> prevLine = new ArrayList<>();
 
         // will need to return the top of the NumberTriangle,
@@ -136,7 +134,6 @@ public class NumberTriangle {
             // remove when done; this line is included so running starter code prints the contents of the file
             System.out.println(line);
 
-            // TODO process the line
             String[] part = line.split(" ");
             List<NumberTriangle> currLine = new ArrayList<>();
             for (String s : part) {
